@@ -1,0 +1,19 @@
+{
+  "service": "input-attendance-lambda",
+  "dockerComposeFile": "../docker-compose.yml",
+  "workspaceFolder": "/input-attendance-lambda",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "eamodio.gitlens",
+        "ms-python.black-formatter",
+        "GitHub.copilot"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2
+      }
+    }
+  }
+}

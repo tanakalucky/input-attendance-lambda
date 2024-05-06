@@ -1,0 +1,8 @@
+services:
+  input-attendance-lambda:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/input-attendance-lambda
+    tty: true
