@@ -7,7 +7,8 @@
       "extensions": [
         "eamodio.gitlens",
         "ms-python.black-formatter",
-        "GitHub.copilot"
+        "GitHub.copilot",
+        "HashiCorp.terraform"
       ],
       "settings": {
         "editor.defaultFormatter": "ms-python.black-formatter",
