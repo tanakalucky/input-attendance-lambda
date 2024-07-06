@@ -36,7 +36,11 @@ resource "aws_iam_role_policy" "lambda_access_policy" {
     },
     {
       "Effect": "Allow",
-      "Action": "ec2:RunInstances",
+      "Action": [
+        "ec2:Describe*",
+        "ec2:RunInstances",
+        "ec2:TerminateInstances"
+      ],
       "Resource": "*"
     },
     {
@@ -46,6 +50,11 @@ resource "aws_iam_role_policy" "lambda_access_policy" {
         "sqs:DeleteMessage",
         "sqs:GetQueueAttributes"
       ],
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
       "Resource": "*"
     }
   ]
